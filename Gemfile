@@ -17,7 +17,6 @@ gem 'devise'
 gem 'devise_ldap_authenticatable'
 gem 'net-ldap'
 gem 'twitter-bootstrap-rails'
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -40,8 +39,12 @@ gem 'spring',        group: :development
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano-rails', group: :development
+gem "capistrano", "~> 2.15.0"
+#
+#gem 'net-ssh', '~>2.7.0'
 
+gem 'capistrano-ext'
+gem 'net-ssh', '~>2.7.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
